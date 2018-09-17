@@ -5,9 +5,9 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body>
+<body onload="fetchIssues()">
 	<div class="container">
-		<h1>JS Issue Traker <small>By Shaiful</small></h1>
+		<h1>JS Issue Traker <small>By shaifulislam.com</small></h1>
 		<div class="jumbotron">
 			<h3>Add new issue:</h3>
 			<form id="issueInputForm">
@@ -29,6 +29,14 @@
 				</div>
 				<button type="submit" class="btn btn-primary" align="center">Add</button>
 			</form>
+		</div>
+		<div class="call-lg-12">
+			<div id="issuesList">
+				
+			</div>
+		</div>
+		<div class="footer">
+			<p>&copy shaifulislam.com</p>
 		</div>
 	</div>
 
